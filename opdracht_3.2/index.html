@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulier</title>
+</head>
+<body>
+    <h2>Formulier</h2>
+
+    <form action="result.html" method="POST">
+
+        <div>
+            <label for="firstname">Voornaam:</label>
+            <input type="text" id="firstname" name="firstname" pattern="[A-Za-z]" title="only letters" required>
+        </div><br>
+
+        <div>
+            <label for="surname">Achternaam:</label>
+            <input type="text" id="surname" name="surname" pattern="[A-Za-z]" title="only letters" required>
+        </div><br>
+      
+        <div>
+            <label for="gender">Geslacht:</label>
+            <div>
+                <label for="female">Vrouw</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="male">Man</label>
+                <input type="radio" name="gender" id="male" value="male">
+            </div>
+        </div><br>
+
+        <div>
+            <label for="Adres">Adres:</label>
+            <input type="text" id="adres" name="adres" required>
+        </div><br>
+
+        <div>
+            <label for="bsn">BSN-nummer:</label>
+            <input type="text" id="bsn" name="bsn" pattern="[0-9]+" title="max 9 cijfers" required>
+        </div><br>
+
+        <div>
+            <label for="holiday countries">Selecteer Vakantieland</label>
+            <select name="holiday countries" id="holiday countries">
+                <option value="zwitserland">Zwitserland</option>
+                <option value="portugal">Portugal</option>
+                <option value="brazilië">Brazilië</option>
+                <option value="dubai">Dubai</option>
+            </select>
+        </div><br>
+
+        <div>
+            <label for="date">Datum Vertrek</label>
+            <input type="date" id="date" name="date" min="2022-09-19" required>
+        </div><br>
+
+        <div>
+            <label for="date">Datum van terugkomst</label>
+            <input type="date" id="date" name="date" min="2022-09-19" required>
+        </div><br>
+
+        <div>
+            <label for="people">Aantal personen</label>
+            <select name="people" id="people">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div><br>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div><br>
+
+        <div>
+            <label for="password">Wachtwoord</label>
+            <input type="password" id="password" name="password" required>
+        </div><br>
+
+        <button type="submit">Boek Nu</button>
+
+    </form>
+    
+</body>
+</html>
