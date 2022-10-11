@@ -23,9 +23,29 @@ p {
 
 header p {
     font-weight: bold;
+    color: white;
+}
+
+header {
+    width: 100vw;
+    height: 30vh;
+    background-image: url("./img/header.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 a {
     color: #8a2be2;
     text-decoration: none;
+}
+
+img {
+    width: 50vw;
+}
+
+article {
+    border: groove crimson;
+    border-radius: 20px;
+    border-width: 3px 3px 3px 7px;
 }
